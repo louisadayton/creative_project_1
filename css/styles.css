@@ -1,13 +1,13 @@
 /* Box-sizing reset: //w3bits.com/?p=3225 */
 html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  } 
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 
 /* The hero image */
@@ -40,34 +40,63 @@ html {
   }
 
 footer {
-    justify-content: flex-start; 
-    background-color: #f8f9fa;
-    padding: 5px; 
-    padding-top: 20px; 
-    padding-left: 20px; 
-    width: 100%;
+  justify-content: flex-start;
+  background-color: #f8f9fa;
+  padding: 5px;
+  padding-top: 20px;
+  padding-left: 20px;
+  width: 100%;
 }
 
 .company-name {
-    color: #495057;
-    line-height: 0.5em;
-    font-size: 13px;
-    padding-bottom: 15px;
-    
+  color: #495057;
+  line-height: 0.5em;
+  font-size: 13px;
+  padding-bottom: 15px;
 }
 
 .github-info {
-    color: #212529;  
-    line-height: 0.5em; 
-    font-size: 13px;
-    padding-bottom: 20px; 
+  color: #212529;
+  line-height: 0.5em;
+  font-size: 13px;
+  padding-bottom: 20px;
 }
 
 .github-info a {
-    color: #212529;
-    text-decoration: none;
+  color: #212529;
+  text-decoration: none;
 }
 
 .github-info a:hover {
-    color: #000;
+  color: #000;
+}
+
+#wordsOnImage {
+  color: white;
+}
+
+.column {
+  align: center;
+  float: left;
+  width: 33.33%;
+}
+
+.image-container {
+  display: flex;
+  object-fit: fill;
+  justify-content: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: fill;
+  padding: 25px 30px;
 }
