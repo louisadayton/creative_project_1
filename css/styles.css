@@ -177,11 +177,13 @@ footer {
     width: 100%;
     margin-bottom: 30px;
   }
+
   .column .img-text {
     top: 60%;
     width: 90%;
   }
-  .column .img-text h2{
+
+  .column .img-text h2 {
     font-size: 80px;
   }
 }
@@ -229,4 +231,10 @@ footer {
 
 .animal-column h3 {
   font-style: italic;
+}
+
+hr {
+  color: #4d4c4c;
+  height: 5px;
+  width: 50%;
 }
