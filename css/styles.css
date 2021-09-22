@@ -177,6 +177,13 @@ footer {
     width: 100%;
     margin-bottom: 30px;
   }
+  .column .img-text {
+    top: 60%;
+    width: 90%;
+  }
+  .column .img-text h2{
+    font-size: 80px;
+  }
 }
 
 /* Small screens */
