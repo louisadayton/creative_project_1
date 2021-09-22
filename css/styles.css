@@ -159,12 +159,35 @@ footer {
 
  .animal-column img {
      width: 100%;
- }
+}
 
  .animal-column h3 {
      font-style: italic;
- }
+}
 
+/* Large screens */
+@media only screen and (min-width: 1024px) {
+
+}
+
+/* Medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .column {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+/* Small screens */
+@media only screen and (max-width: 767px) {
+  .column {
+    width: 100%; 
+    margin-bottom: 30px;
+  }
+  .column .img-text h2{
+    font-size: 100px; 
+  }
+}
 
 
 
