@@ -103,12 +103,76 @@ footer {
 }
 
 .img {
-  width: 100%;
+  <<<<<<< HEAD width: 100%;
   height: 350px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(73%);
+  =======width: 100%;
+  height: 300px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(73%);
+}
+
+.img a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.heading_2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  align-items: center;
+  height: 600px;
+  position: relative;
+  width: 100%;
+}
+
+.heading-img {
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(73%);
+}
+
+.heading_2 .heading-text {
+  color: white;
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  /* Adjust this value to move the positioned div up and down */
+  text-align: right;
+  width: 60%;
+  /* Set the width of the positioned div */
+}
+
+.animal-column {
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  float: left;
+  width: 50%;
+  position: relative;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.animal-column img {
+  width: 100%;
+}
+
+.animal-column h3 {
+  font-style: italic;
+  >>>>>>>39938956fbc75b069e23f35d126f1fdc11bde58d
 }
 
 .img a {
@@ -180,11 +244,24 @@ footer {
 
   .column .img-text {
     top: 60%;
-    width: 90%;
+    width: 100%;
   }
 
   .column .img-text h2 {
     font-size: 80px;
+  }
+
+  .row {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .animal-column {
+    width: 100%;
+  }
+
+  .img {
+    height: 550px;
   }
 }
 
