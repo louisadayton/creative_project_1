@@ -189,13 +189,10 @@ footer {
   font-style: italic;
 }
 
-.sep-animals {
-  margin: 40px; 
-}
 
 .animal {
-  margin-top: 80px; 
-  margin-bottom: 80px;
+  margin-top: 100px; 
+  margin-bottom: 100px;
 }
 
 /* Large screens */
