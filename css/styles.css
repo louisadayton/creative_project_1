@@ -52,7 +52,7 @@ footer {
   justify-content: center;
 }
 
-.heading {
+.heading-container {
   margin-bottom: 40px;
 }
 
@@ -120,7 +120,7 @@ footer {
 
 .heading_2 {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   align-items: center;
   height: 600px;
   position: relative;
@@ -150,7 +150,12 @@ footer {
   /* Set the width of the positioned div */
 }
 
+.heading-text h1 {
+  font-size: 300px; 
+}
+
 .animal-column {
+  margin: auto; 
   justify-content: center;
   text-align: center;
   align-content: center;
@@ -161,12 +166,30 @@ footer {
   padding-right: 50px;
 }
 
-.animal-column img {
-  width: 100%;
+.animal-column ul {
+  padding-top: 0px;
+  padding-left: 75px;
+  padding-right: 0px; 
+  text-align: left; 
+  line-height: 2em; 
 }
 
-.animal-column h3 {
+.animal-column li {
+  font-size: 18px; 
+}
+
+.animal-column img {
+  width: 100%;
+  padding: 10px;
+  border: 4px solid #555;
+}
+
+.animal-column h4 {
   font-style: italic;
+}
+
+.sep-animals {
+  margin: 40px; 
 }
 
 /* Large screens */
