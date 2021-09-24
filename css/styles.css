@@ -122,9 +122,10 @@ footer {
   margin-top: 50px;
   margin-bottom: 40px;
   align-items: center;
-  height: 600px;
+  height: 650px;
   position: relative;
   width: 100%;
+  line-height: 650px;
 }
 
 .heading-img {
@@ -143,15 +144,15 @@ footer {
   margin: 0 auto;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 10%;
   /* Adjust this value to move the positioned div up and down */
-  text-align: right;
+  text-align: center;
   width: 60%;
   /* Set the width of the positioned div */
 }
 
 .heading-text h1 {
-  font-size: 300px; 
+  font-size: 10vw; 
 }
 
 .animal-column {
@@ -190,6 +191,11 @@ footer {
 
 .sep-animals {
   margin: 40px; 
+}
+
+.animal {
+  margin-top: 80px; 
+  margin-bottom: 80px;
 }
 
 /* Large screens */
