@@ -201,6 +201,7 @@ footer {
 }
 
 .event-column {
+  margin: auto;
   justify-content: center;
   text-align: center;
   align-content: center;
@@ -213,12 +214,6 @@ footer {
 
 .event-column img {
   width: 100%;
-}
-
-.event-column h1 h2 h4 p {
-  text-align: center;
-  vertical-align: center;
-  top: 50%;
 }
 
 /* Large screens */
