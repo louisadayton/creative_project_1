@@ -23,9 +23,11 @@ function onClick(e) {
         let scientificNames = []; 
         let i = 0; 
         let j = -1; 
+        console.log(json); 
         while (i < 5) {
             j++;    
-            if (json.result[j].class_name !== "AMPHIBIA" && json.result[j].class_name !== "REPTILIA") { 
+            console.log(j); 
+            if (json.result[j].class_name !== "AMPHIBIA" && json.result[j].class_name !== "REPTILIA" && json.result[j].class_name !== "MAMMALIA") { 
                 //console.log(json.result[i].class_name); 
                 continue; 
             }
