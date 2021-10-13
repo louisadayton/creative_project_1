@@ -46,7 +46,7 @@ function updateResult(commonNames, scientificNames) {
   for (let i = 0; i < commonNames.length; i++) {
     info += "<div class=\"row animal\">";
     info += "<div class=\"api-column\">"
-    info = info + '<img src="/images/' + commonNames[i] + '.jpg" style="height:150px; width:200px;">';
+    info = info + '<img src="/images/' + commonNames[i] + '.jpg">';
     info += "</div>";
     info += "<div class=\"api-column\">";
     info = info + "<h1>" + commonNames[i] + "</h1>" + "<h2>" + scientificNames[i] + "</h2>";
