@@ -269,11 +269,13 @@ ul {
 
 .conservation-column img {
   width: 100%;
-  height: 300px;
-  background-position: 50% 50%;
+  /* height: 300px; */
+  /* background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(73%);
+  filter: brightness(73%); */
+  padding: 10px;
+  border: 4px solid #555;
 }
 
 .event-column {
