@@ -41,10 +41,25 @@
   </div>
 
   <div class="threatened-species">
+    <h3>Choose a class and a family:</h3>
     <form>
-      <label>Choose a region</label>
-      <input id="regionInput" type="text" value=""></input><br />
-      <input id="regionSubmit" type="submit" value="Submit"></input>
+      <label>Class:</label>
+      <select id = "classInput" onchange = "onClassSelection()" >  
+        <option> ---Choose a class--- </option>  
+        <option value="amphibians"> Amphibian </option>  
+        <option value="reptiles"> Reptile </option>    
+      </select> <br />
+      <!-- <input id="classInput" type="text" value=""></input>
+      <input id="classSubmit" type="submit" value="Submit"></input><br /> -->
+      <!-- <label>Family:</label> -->
+      <!-- <input id="familyInput" type="text" value=""></input>
+      <input id="familySubmit" type="submit" value="Get Species"></input><br /> -->
+    </form>
+    <form>
+      <label>Family:</label>
+      <select id="familyInput" onChange="onFamilySelection()">
+        <option> ---Choose a family--- </option>
+      </select>
     </form>
     <div id="threatened"></div>
   </div>
