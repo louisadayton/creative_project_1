@@ -5,7 +5,8 @@ function onClick(e) {
   console.log(regionID);
   let token = "9bb4facb6d23f48efbf424bb05c0c1ef1cf6f468393bc745d42179ac4aca5fee";
   // setup URL
-  let url = "http://apiv3.iucnredlist.org/api/v3/species/region/" + regionID + "/page/0?token=" + token;
+  //let url = "http://apiv3.iucnredlist.org/api/v3/species/region/" + regionID + "/page/0?token=" + token;
+  let url = "http://www.bloowatch.org/developers/json/species"
   //let url = "http://apiv3.iucnredlist.org/api/v3/species/region/europe/page/0?token=9bb4facb6d23f48efbf424bb05c0c1ef1cf6f468393bc745d42179ac4aca5fee"
   // call API
   fetch(url)
@@ -18,26 +19,27 @@ function onClick(e) {
       }
       return response.json();
     }).then(function(json) {
+      console.log(json); 
       // update DOM with response
-      let commonNames = [];
-      let scientificNames = [];
-      let i = 0;
-      let j = -1;
-      while (i < 5) {
-        j++;
-        if (json.result[j].class_name !== "AMPHIBIA" && json.result[j].class_name !== "REPTILIA") {
-          //console.log(json.result[i].class_name);
-          continue;
-        }
-        console.log(json.result[j].main_common_name);
-        //console.log(json.result[j].scientific_name);
-        //console.log(json.result[j].class_name);
-        commonNames.push(json.result[j].main_common_name);
-        scientificNames.push(json.result[j].scientific_name);
-        i++;
-      }
+      // let commonNames = [];
+      // let scientificNames = [];
+      // let i = 0;
+      // let j = -1;
+      // while (i < 5) {
+      //   j++;
+      //   if (json.result[j].class_name !== "AMPHIBIA" && json.result[j].class_name !== "REPTILIA" && json.result[j].class_name !== "MAMMALIA") {
+      //     //console.log(json.result[i].class_name);
+      //     continue;
+      //   }
+      //   console.log(json.result[j].main_common_name);
+      //   //console.log(json.result[j].scientific_name);
+      //   //console.log(json.result[j].class_name);
+      //   commonNames.push(json.result[j].main_common_name);
+      //   scientificNames.push(json.result[j].scientific_name);
+      //   i++;
+      // }
 
-      updateResult(commonNames, scientificNames);
+      // updateResult(commonNames, scientificNames);
     });
 }
 
