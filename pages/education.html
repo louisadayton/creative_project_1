@@ -41,19 +41,17 @@
   </div>
 
   <div class="threatened-species">
-    <h3>Choose a class and a family:</h3>
+    <h1>Conservation information from WildNet (The Queensland database)</h1>
+    <p>Selecting a class and family below will give you a picture, the common name, the scientific name, and the conservation effort of some animals in the family and class you select</p>
+    <p><em>The data takes some time to load, so please be patient</em></p>
+    <h4>Choose a class and a family:</h4>
     <form>
       <label>Class:</label>
-      <select id = "classInput" onchange = "onClassSelection()" >  
-        <option> ---Choose a class--- </option>  
-        <option value="amphibians"> Amphibian </option>  
-        <option value="reptiles"> Reptile </option>    
+      <select id="classInput" onChange="onClassSelection()">
+        <option> ---Choose a class--- </option>
+        <option value="amphibians"> Amphibian </option>
+        <option value="reptiles"> Reptile </option>
       </select> <br />
-      <!-- <input id="classInput" type="text" value=""></input>
-      <input id="classSubmit" type="submit" value="Submit"></input><br /> -->
-      <!-- <label>Family:</label> -->
-      <!-- <input id="familyInput" type="text" value=""></input>
-      <input id="familySubmit" type="submit" value="Get Species"></input><br /> -->
     </form>
     <form>
       <label>Family:</label>
