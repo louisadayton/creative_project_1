@@ -33,7 +33,7 @@ function updateFamilyOptions(familyOptions) {
   //This function should update the options for family names
   let options = "<option> ---Choose a family--- </option>";
   for (let i = 0; i < familyOptions.length; i++) {
-    if (familyOptions[i] == "Emydidae") {
+    if (familyOptions[i] === "Emydidae" || familyOptions[i] === "Bufonidae") {
       continue;
     }
     options = options + "<option value=" + familyOptions[i].toLowerCase() + "> " + familyOptions[i] + "</option>"
