@@ -12,7 +12,7 @@ function onClassSelection() {
       .then(function(response) {
         // make sure the request was successful
         if (response.status != 200) {
-          console.log(response); 
+          console.log(response);  
           return {
             text: "Error calling the Numbers API service: " + response.statusText
           }
