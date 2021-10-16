@@ -19,7 +19,7 @@ function onClassSelection() {
       return response.json();
     }).then(function(json) {
 
-      console.log(json);
+      // console.log(json);
       let familyOptions = [];
       for (let i = 0; i < json.Family.length; i++) {
         familyOptions.push(json.Family[i].FamilyName);
@@ -61,12 +61,13 @@ function onFamilySelection() {
       return response.json();
     }).then(async function(json) {
 
-      console.log(json);
+      // console.log(json);
 
-      let commonNames = [];
-      let imageURLs = [];
-      let scientificNames = [];
+      // let commonNames = [];
+      // let imageURLs = [];
+      // let scientificNames = [];
       let animals = [];
+      let familyCommonName = "";
       let j = 0;
       let i = 0;
       while (j < 5) {
@@ -80,7 +81,7 @@ function onFamilySelection() {
               conservation: json.Species[i].ConservationStatus.NCAStatus
             }
             animals.push(aml);
-            imageURLs.push(imgURL);
+            // imageURLs.push(imgURL);
             // commonNames.push(json.Species[i].AcceptedCommonName);
             // scientificNames.push(json.Species[i].ScientificName);
             j++;
@@ -92,10 +93,13 @@ function onFamilySelection() {
         }
         i++;
       }
+      if (json.Species[0].FamilyCommonName != null) {
+        familyCommonName = json.Species[0].FamilyCommonName;
+      }
 
-      console.log(animals);
+      // console.log(familyCommonName);
 
-      updateResult(animals);
+      updateResult(animals, familyCommonName);
     });
 }
 
@@ -129,8 +133,9 @@ async function getImageURL(speciesURL) {
   return imageURL;
 }
 
-function updateResult(animals) {
+function updateResult(animals, familyCommonName) {
   let info = "";
+  info += "<h2><strong><u>" + familyCommonName.toUpperCase() + "</u></strong></h2>";
   animals.forEach((aml) => {
     info += "<div class=\"row animal\">";
     info += "<div class=\"api-column\">"
