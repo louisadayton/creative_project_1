@@ -76,7 +76,7 @@ function onFamilySelection() {
           if (imgURL != null && json.Species[i].AcceptedCommonName != null && json.Species[i].ScientificName != null && json.Species[i].ConservationStatus.NCAStatus != null) {
             let aml = {
               imageURL: imgURL,
-              commonName: json.Species[i].AcceptedCommonName,
+              commonName: json.Species[i].AcceptedCommonName, 
               scientificName: json.Species[i].ScientificName,
               conservation: json.Species[i].ConservationStatus.NCAStatus
             }
@@ -142,7 +142,8 @@ function updateResult(animals, familyCommonName) {
     info = info + `<img src="${aml.imageURL}">`;
     info += "</div>";
     info += "<div class=\"api-column\">";
-    info += "<h1><u>" + aml.commonName + "</u></h1>" + "<h3>" + aml.scientificName + "</h3>";
+    info += "<h1><u>" + aml.commonName.charAt(0).toUpperCase() + aml.commonName.slice(1) + "</u></h1>" + 
+            "<h3>" + aml.scientificName + "</h3>";
     info += "<p><em>Conservation Status: <u>" + aml.conservation + "</u></em></p>";
     info += "</div>";
     info += "</div>";
